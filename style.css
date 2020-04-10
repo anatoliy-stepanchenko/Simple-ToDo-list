@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.container{
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 20px;
+  border: 4px groove seagreen;
+  border-radius: 15px;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.inp {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #000;
+  background: none;
+  padding: 10px;
+  margin-bottom: 25px;
+  outline: none;
+  font-size: 18px;
+  color: navy;
+}
+
+h3{
+  margin: 10px 0;
+}
+
+.task{
+  width: 100%;
+  background: rgba(255,255,255,0.5);
+  padding: 18px;
+  margin: 6px 0;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+  .notcomp>.task:hover {
+    background: rgba(255,255,255,0.7);
+    box-shadow: 2px 2px 8px;
+  }
+
+  .comp>.task:hover {
+    background: rgba(0,0,0,0.7);
+    box-shadow: 2px 2px 8px white;
+  }
+
+.task i{
+  float: right;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+  .fa-check:hover {
+    color: springgreen;
+  }
+
+  .fa-trash-alt:hover {
+    color: tomato;
+  }
+
+.comp .task{
+  background: rgba(0,0,0,.5);
+  color: #fff;
+}
+
+.comp {
+  margin-top: 20px;
+}
